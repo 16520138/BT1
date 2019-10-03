@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BT1.GridLayout">
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+              RowSpacing="3" ColumnSpacing="3" BackgroundColor="Black">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--row 0-->
+            <Label Text="0"
+                   BackgroundColor="Gray"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="4"
+                   HorizontalTextAlignment="End"
+                   VerticalTextAlignment="End"
+                   TextColor="White"
+                   FontSize="80"/>
+
+            <!--row 1-->
+            <Button Text="C"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="+/-"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="%"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="DIV"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    BackgroundColor="Orange"
+                    TextColor="White"
+                    FontSize="25"/>
+
+            <!--row 2-->
+            <Button Text="7"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="8"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="9"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="X"
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    BackgroundColor="Orange"
+                    TextColor="White"
+                    FontSize="25"/>
+
+            <!--row 3-->
+            <Button Text="4"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="5"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="6"
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="-"
+                    Grid.Row="3"
+                    Grid.Column="3"
+                    BackgroundColor="Orange"
+                    TextColor="White"
+                    FontSize="25"/>
+
+            <!--row 4-->
+            <Button Text="1"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="2"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="3"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="+"
+                    Grid.Row="4"
+                    Grid.Column="3"
+                    BackgroundColor="Orange"
+                    TextColor="White"
+                    FontSize="25"/>
+
+            <!--row 5-->
+            <Button Text="0"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="."
+                    Grid.Row="5"
+                    Grid.Column="2"
+                    BackgroundColor="LightGray"
+                    FontSize="25"/>
+            <Button Text="="
+                    Grid.Row="5"
+                    Grid.Column="3"
+                    BackgroundColor="Orange"
+                    TextColor="White"
+                    FontSize="25"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

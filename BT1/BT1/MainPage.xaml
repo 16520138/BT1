@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BT1.MainPage">
+
+
+    <StackLayout>
+
+        <Button Text="MÀN HÌNH CHÀO"
+                HorizontalOptions="Fill"
+                HeightRequest="80"
+                FontSize="Large"
+                x:Name="helloScreen"
+                Clicked="HelloScreen_Clicked"/>
+
+        <Button Text="MÀN HÌNH TÍNH TỔNG"
+                HorizontalOptions="Center"
+                HeightRequest="80"
+                FontSize="Large"
+                x:Name="sumScreen"
+                Clicked="SumScreen_Clicked"/>
+
+        <Button Text="STACK LAYOUT"
+                HorizontalOptions="Center"
+                HeightRequest="80"
+                FontSize="Large"
+                x:Name="stackLayout"
+                Clicked="StackLayout_Clicked"/>
+
+        <Button Text="ABSOLUTE LAYOUT"
+                HorizontalOptions="Center"
+                HeightRequest="80"
+                FontSize="Large"
+                x:Name="absoluteLayout"
+                Clicked="AbsoluteLayout_Clicked"/>
+
+        <Button Text="GRID LAYOUT"
+                HorizontalOptions="Fill"
+                HeightRequest="80"
+                FontSize="Large"
+                x:Name="gridLayout"
+                Clicked="GridLayout_Clicked"/>
+
+        <Button Text="LOGIN"
+                HorizontalOptions="Fill"
+                HeightRequest="80"
+                FontSize="Large"
+                x:Name="login"
+                Clicked="Login_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BT1.SumScreen">
+    <ContentPage.Content>
+        <StackLayout >
+            <Label Text="Màn hình tính tổng" />
+
+            <Label Text="Nhập số a"/>
+            <Entry x:Name="txtNum1" 
+                Placeholder="Nhập số a"/>
+
+            <Label Text="Nhập số b"/>
+            <Entry x:Name="txtNum2" 
+                Placeholder="Nhập số b"/>
+
+            <Label Text="Tổng"/>
+            <Entry x:Name="txtTong" 
+                Placeholder="Tổng"/>
+
+            <Button Text="TÍNH TỔNG" Clicked="CalSum"/>
+            <Button Text="VỀ TRANG CHỦ" Clicked="ReturnHomepage"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
